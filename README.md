@@ -1,6 +1,7 @@
 # TokenMaster-Launcher-FDL
 
 This repository aims to contribute to the **TokenMaster Launcher Pro v5.x FDL Cheat Codes** database.
+> **credits** : [TokenMaster's Random Ramblings](https://tokenmaster.blogspot.com)
 
 XML structure is quite simple:
 
@@ -15,4 +16,16 @@ XML structure is quite simple:
         </code\>
       </cafd\>
     </FDL\>
+
+## Create your own file
+If the XML file does not exist in the launcher UI, you need to copy it to this folder : `%ProgramFiles%\TokenMaster\LauncherPRO5\FDLCodes` and then restart the Launcher.
+
+## Updating existing Cheat Codes files
+When XML file already exists into the Launcher UI, you only have to update to the last online version directly into the **Launcher FDL Cheat Codes menu**
+
+[![FDLupdating.png](https://i.postimg.cc/q75zpRfn/FDLupdating.png)](https://postimg.cc/2qnzwCS8)
+
+## Testing your own file
+Your XML Cheat Codes files will have to be in `%LocalAppData%\LauncherPRO5\FDLCodes`. When updating to last version directly from Launcher UI, files are overwriten from this repository (since Launcher PRO v5.0.5). Before this version, master repository is [packetpilot](https://github.com/packetpilot/bmw-f) but not but not maintained anymore.
+
 
