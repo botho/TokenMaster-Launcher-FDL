@@ -31,7 +31,7 @@ If the XML file does not exist in the launcher UI, you need to copy it to this f
 
 ## Updating existing Cheat Codes files
 When XML file already exists into the Launcher UI, you only have to update to the last online version directly into the **Launcher FDL Cheat Codes menu**
- [![FDL-updating.png](https://i.postimg.cc/v83Sbg3D/FDL-updating.png)](https://postimg.cc/nM911z8t)
+ [![FDL-cheat-code-3.png](https://i.postimg.cc/SKZhvWg4/FDL-cheat-code-3.png)](https://postimg.cc/kVtzVtrY)
 
 ## Testing your own file
 Your XML Cheat Codes files will have to be in `%LocalAppData%\LauncherPRO5\FDLCodes` (launcher must be restarted to take into account the new file). When updating to last version directly from Launcher UI, files are overwriten from this repository (since Launcher PRO v5.0.5). Before this version, master repository is [packetpilot](https://github.com/packetpilot/bmw-f) but not but not maintained anymore.
