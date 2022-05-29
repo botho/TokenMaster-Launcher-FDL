@@ -10,7 +10,7 @@ XML structure is quite simple:
         <code description="Angel Eyes Parking Light Brightness 50%" series="F030"\>
     	  <group id="3062"\>
     	    <function start="68" end="68" mask="11111111b" comment="MAPPING_STANDL_V_L_PWM Level 1 - Left"\>32</function\>
-    		<function start="80" end="80" mask="11111111b" comment="This is a comment..."\>32</function\>
+            <function start="80" end="80" mask="11111111b" comment="This is a comment..."\>32</function\>
     	  </group\>
     	</code\>
       </cafd\>
