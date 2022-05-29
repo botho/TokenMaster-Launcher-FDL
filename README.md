@@ -18,7 +18,7 @@ This repository aims to contribute to the **TokenMaster Launcher Pro v5.x FDL Ch
       </cafd\>
     </FDL\>
 
- - **CAFD id** : You can find it into .ncd file name or into Header section of .ncd file into launcher FDL Editor :
+ - **cafd id** : You can find it into .ncd file name or into Header section of .ncd file into launcher FDL Editor :
  [![FDL-cheat-code-1.png](https://i.postimg.cc/FK3ztJ5B/FDL-cheat-code-1.png)](https://postimg.cc/xkjnM8dv)
  - **name** : what you want but prefer the ECU real name
  - **series** : useful for Launcher UI filtering capability (optional)
