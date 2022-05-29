@@ -18,13 +18,14 @@ This repository aims to contribute to the **TokenMaster Launcher Pro v5.x FDL Ch
       </cafd\>
     </FDL\>
 
- - CAFD ID is visible into .NCD file name or into Header section of .ncd file into launcher FDL Editor :
+ - **CAFD id** : You can find it into .ncd file name or into Header section of .ncd file into launcher FDL Editor :
  [![FDL-cheat-code-1.png](https://i.postimg.cc/FK3ztJ5B/FDL-cheat-code-1.png)](https://postimg.cc/xkjnM8dv)
  - **name** : what you want but prefer the ECU real name
  - **series** : useful for Launcher UI filtering capability (optional)
  - **description** : useful for Launcher UI Review function to ensure you are coding the right settings (optional)
  - **group id, start, end and mask** : you can find them into FDL Editor with "*Storage Info*" selected :
  [![FDL-cheat-code-2.png](https://i.postimg.cc/5NW633hF/FDL-cheat-code-2.png)](https://postimg.cc/c6Tx1Q4s)
+ - **function value** : this is the setting value you want to code (Werte=32 in this sample above)
 
 ## Create your own file
 If the XML file does not exist in the launcher UI, you need to copy it to this folder : `%ProgramFiles%\TokenMaster\LauncherPRO5\FDLCodes` and then restart the Launcher.
