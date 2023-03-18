@@ -2,7 +2,7 @@
 <FDL>
    <!--
 	Botho - Public Release
-	last updated: 2022-10-21
+	last updated: 2023-03-18
     -->
    <cafd id="00000911" name="ACSM_4B" author="Botho (public)" series="F020,F030">
       <code description="Ceinture de sécurité: Durée du rappel à 10s (default: 100s)">
