@@ -2,7 +2,7 @@
 <FDL>
    <!--
 	Botho - Public Release
-	last updated: 2023-03-18
+	last updated: 2023-07-15
     -->
    <cafd id="00000911" name="ACSM_4B" author="Botho (public)" series="F020,F030">
       <code description="Ceinture de sécurité: Durée du rappel à 10s (default: 100s)">
@@ -67,9 +67,9 @@
             <function start="6" end="6" mask="00000011b" comment="QUITTBLK_SICHERN_ANZAHL (default: 01)">02</function>
          </group>
       </code>
-      <code description="Accès confort: Activation accès confort à la fermeture après 0,5s (default: 1,5s)">
+      <code description="Accès confort: Activation accès confort à la fermeture après 1s (default: 1,5s)">
          <group id="3053">
-            <function start="9" end="9" mask="11111111b" comment="KOMFORT_SCHLIESSEN (default: 0F)">05</function>
+            <function start="9" end="9" mask="11111111b" comment="KOMFORT_SCHLIESSEN (default: 0F)">0A</function>
          </group>
       </code>
       <code description="Accès confort: Activation accès confort à l'ouverture après 2s (2,5s par default)">
@@ -82,9 +82,9 @@
             <function start="5" end="5" mask="00000110b" comment="CAM_SMART_CLOSER (default: aktiv si production date après 0315)">aktiv</function>
          </group>
       </code>
-      <code description="Accès confort: Délais d'ouverture (Smart Oppening only) du coffre à 0,1s (default 0,7s)">
+      <code description="Accès confort: Délais d'ouverture (Smart Oppening only) du coffre à 0,3s (default 0,7s)">
          <group id="3040">
-            <function start="12" end="12" mask="11111111b" comment="CLM_TIMEOUT_HK_SMO (default: wert_03)">wert_01</function>
+            <function start="12" end="12" mask="11111111b" comment="CLM_TIMEOUT_HK_SMO (default: wert_03)">wert_02</function>
          </group>
       </code>
       <code description="Accès confort: Délais d'ouverture du coffre (no Smart Oppening) à 0,1s (default 0,3s)">
@@ -324,23 +324,23 @@
             <function start="121" end="121" mask="00111111b" comment="MAPPING_ABBIEGEL_R_OUTPUT (default: nsw_r)">nsw_r</function>
          </group>
       </code> 
-	  <code description="High-Beam Assistant motorway (HBA): activation immédiat dès 110 km/h (défaut: 140 km/h) ou entre 80 km/h et 100 km/h pendant 15 sec (défaut: 90-110 km/h pendant 30 sec)">
+	  <code description="High-Beam Assistant motorway (HBA): activation immédiat dès 120 km/h (défaut: 140 km/h) ou entre 80 km/h et 100 km/h pendant 15 sec (défaut: 90-110 km/h pendant 30 sec)">
          <group id="3074">
             <function start="5" end="5" mask="11111111b" comment="C_HBA_HGWY_V_LO (default: 5A - 90 km/h)">50</function>
-            <function start="6" end="6" mask="11111111b" comment="C_HBA_HGWY_V_HI (default: 8C - 140 km/h)">6E</function>
+            <function start="6" end="6" mask="11111111b" comment="C_HBA_HGWY_V_HI (default: 8C - 140 km/h)">82</function>
             <function start="7" end="7" mask="11111111b" comment="C_HBA_HGWY_V_MIN (default: 6E - 110 km/h)">64</function>
             <function start="8" end="8" mask="11111111b" comment="C_HBA_HGWY_T_MIN (default: 1E - 30 sec)">0F</function>
          </group>
       </code>
-	  <code description="High-Beam Assistant Anti-Glare tunel (HBA): activation dès 45 km/h et désactivation à 50 km/h (defaut: 60-70 km/h)">
+	  <code description="High-Beam Assistant Anti-Glare tunel (HBA): activation dès 50 km/h et désactivation à 45 km/h (defaut: 70-60 km/h)">
          <group id="3074">
             <function start="0" end="0" mask="11111111b" comment="C_HBA_ENA_V_LO (default: 3C - 60 km/h)">2D</function>
             <function start="1" end="1" mask="11111111b" comment="C_HBA_ENA_V_HI (default: 46 - 70 km/h)">32</function>
          </group>
       </code>
-	  <code description="*** EN COURS DE TEST *** High-Beam Assistant (HBA): activation via réglage NBT (défaut: non)">
+	  <code description="High-Beam Assistant (HBA): activation via le bouton d'éclairage vers la droite (défaut: non)">
          <group id="3060">
-            <function start="22" end="22" mask="11000000b" comment="FLA_AKTIVIERUNG (default: LDS_in_A)">02</function>
+            <function start="22" end="22" mask="11000000b" comment="FLA_AKTIVIERUNG (default: LDS_in_A)">LDS_in_A_oder_2</function>
          </group>
       </code>
       <code description="Feux anti-brouillard: désactive cornering lights">
@@ -379,9 +379,9 @@
             <function start="14" end="14" mask="11111111b" comment="WL_HELLIGKEIT (default: 64)">32</function>
          </group>
       </code>
-      <code description="Eclairage d'accueil: durée 120s (default: 20s)">
+      <code description="Eclairage d'accueil: durée 60s (default: 20s)">
          <group id="3060">
-            <function start="15" end="15" mask="11111111b" comment="WL_TIMEOUT (default: 14)">78</function>
+            <function start="15" end="15" mask="11111111b" comment="WL_TIMEOUT (default: 14)">3C</function>
          </group>
       </code>
       <code description="Eclairage: Sensibilité du capteur éclairage automatique (moins sensible)">
@@ -654,7 +654,7 @@
       </code>
    </cafd>
    <cafd id="0000067B" name="ICMQL" author="Botho (public)" series="F020,F030">
-      <code description="Active Cruise Control default distance (Level 1)">
+      <code description="Active Cruise Control default distance (Level 1 - la plus faible)">
          <group id="3000">
             <function start="184" end="184" mask="00000111b" comment="C_Abstandsstufe_init (default: 03)">01</function>
          </group>
@@ -759,7 +759,7 @@
             <function start="4" end="4" mask="11111111b" comment="THRV_AVAI_TLC_LOW (default: 41)">32</function>
          </group>
       </code>	  
-	  <code description="High-Beam Assistant (HBA): activation du réglage de la sensibilité (default: no_sensitivity_change)">
+	  <code description="-- Don't work -- High-Beam Assistant (HBA): activation du réglage de la sensibilité (default: no_sensitivity_change)">
          <group id="3050">
             <function start="1" end="1" mask="00010000b" comment="ALLOW_SENS_CHANGE (default: 00)">01</function>
          </group>
@@ -771,7 +771,7 @@
       </code>
 	  <code description="High-Beam Assistant (HBA): activation dès 30 km/h et désactivation à 25 km/h (default: 40-30 km/h)">
          <group id="3050">
-            <function start="6" end="6" mask="11111111b" comment="SPEED_SWITCHING_HIGH_BEAMS_ON (default: 28)">48</function>
+            <function start="6" end="6" mask="11111111b" comment="SPEED_SWITCHING_HIGH_BEAMS_ON (default: 28)">1E</function>
             <function start="7" end="7" mask="11111111b" comment="SPEED_SWITCHING_HIGH_BEAMS_OFF (default: 1E)">19</function>
          </group>
       </code>
@@ -1270,6 +1270,11 @@
             <function start="1" end="1" mask="00000010b" comment="BC_DIGITAL_V (default: nicht_aktiv)">aktiv</function>
          </group>
       </code>
+	  <code description="Tableau de bord: Affichage de la vitesse réelle">
+         <group id="3000">
+            <function start="1" end="1" mask="01000000b" comment="BC_V_KORREKTUR (default: aktiv)">nicht_aktiv</function>
+         </group>
+      </code>
       <code description="Tableau de bord: Seuil de la 1ère alerte réserve carburant à 70km (90km par default)">
          <group id="3000">
             <function start="35" end="35" mask="11111111b" comment="CC_RW_WARNUNG_2 (default: 5A)">46</function>
@@ -1415,7 +1420,22 @@
             <function start="41" end="41" mask="00010000b" comment="SPA_SPORT_ENABLE (default: nicht_aktiv. Aktiv si production date après 0315)">aktiv</function>
          </group>
       </code>
-      <code description="Tableau de bord: Dégroupage DTS (intérêt à valider - http://www.bimmerfest.com/forums/showthread.php?p=10034327)">
+	  <code description="Tableau de bord: Affichage rapports au compteur">
+         <group id="3003">
+            <function start="0" end="0" mask="00010000b" comment="SPA_IST_GANG_ENABLE (default: nicht_aktiv)">aktiv</function>
+         </group>
+      </code>
+	  <code description="Tableau de bord: Volume clignotant moins fort">
+         <group id="300B">
+            <function start="4" end="4" mask="11111111b" comment="BLINKER_VOLUME_CONTI (default: E0, F0, FF, FF)">A0, B0, C0, FF</function>
+         </group>
+      </code>
+	  <code description="Tableau de bord: Volume clignotant par defaut">
+         <group id="300B">
+            <function start="4" end="4" mask="11111111b" comment="BLINKER_VOLUME_CONTI (default: E0, F0, FF, FF)">E0, F0, FF, FF</function>
+         </group>
+      </code>
+	  <code description="Tableau de bord: Dégroupage DTS (intérêt à valider - http://www.bimmerfest.com/forums/showthread.php?p=10034327)">
          <group id="3000">
             <function start="43" end="43" mask="00000010b" comment="DSC_OFF_ENTFLECHTUNG_ENABLE (default: nicht_aktiv)">aktiv</function>
          </group>
@@ -1445,24 +1465,14 @@
             <function start="5" end="5" mask="00000001b" comment="HUD_PIA_BLINKER (default: nicht_aktiv)">aktiv</function>
          </group>
       </code>
-	  <code description="-- TESTING -- HUD : HUD_POSITIONCHANGE_ENABLE">
+	  <code description="-- TESTING -- HUD: HUD_POSITIONCHANGE_ENABLE">
          <group id="3000">
-            <function start="53" end="53" mask="1000000b" comment="HUD_POSITIONCHANGE_ENABLE (défaut : nicht_aktiv)">aktiv</function>
+            <function start="53" end="53" mask="10000000b" comment="HUD_POSITIONCHANGE_ENABLE (défaut : nicht_aktiv)">aktiv</function>
          </group>
       </code>
-	  <code description="-- TESTING -- HUD : HUD_TRANSITION_EFFECT">
-         <group id="3000">
-            <function start="54" end="54" mask="1111111b" comment="HUD_TRANSITION_EFFECT (défaut : nicht_aktiv)">aktiv</function>
-         </group>
-      </code>
-	  <code description="-- TESTING -- HUD : SPA_ENABLE">
-         <group id="3000">
+	  <code description="-- TESTING -- HUD: SPA_ENABLE">
+         <group id="3003">
             <function start="0" end="0" mask="0001000b" comment="SPA_ENABLE - Active l'affichage du point de commutation (défaut : nicht_aktiv)">aktiv</function>
-         </group>
-      </code>
-	  <code description="-- TESTING -- HUD : HUD_BLINKER_ENABLE">
-         <group id="3000">
-            <function start="1" end="1" mask="0000001b" comment="HUD_BLINKER_ENABLE (défaut : nicht_aktiv)">aktiv</function>
          </group>
       </code>
    </cafd>
